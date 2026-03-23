@@ -1,41 +1,51 @@
-body {
+/* Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Center layout */
-.main {
+/* Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
     height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Center everything */
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
-/* Card design */
+/* Card */
 .card {
-    width: 300px;
-    padding: 20px;
+    width: 320px;
+    padding: 25px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
     text-align: center;
     color: white;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
-/* Profile image */
+/* Profile Image */
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border: 3px solid white;
+    margin-bottom: 10px;
 }
 
 /* Subtitle */
 .subtitle {
     font-size: 14px;
     opacity: 0.8;
+    margin-bottom: 15px;
 }
 
 /* Sections */
@@ -44,20 +54,26 @@ body {
 }
 
 .section h3 {
-    margin-bottom: 5px;
     font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.section p {
+    font-size: 13px;
+    opacity: 0.9;
 }
 
 /* Button */
 .btn {
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     background: white;
-    color: #2a5298;
-    cursor: pointer;
+    color: #764ba2;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
